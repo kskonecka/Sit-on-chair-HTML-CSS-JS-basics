@@ -154,6 +154,7 @@ p {
 .greybackground {
   background-color: rgba(215, 209, 205, 0.5);
   margin-top: 100px;
+  text-indent: 4px;
 }
 .clair p { /*czcionki bold sciagnac*/
   line-height: 40px;
@@ -164,9 +165,10 @@ p {
 .clair hr, .margarita hr {
   display: block;
   height: 7px;
-  width: 136px;
+  width: 146px;
   background-color: #21b89c;
-  margin-top: -14px;
+  margin-top: -20px;
+  margin-left: 4px;
 }
 .middle_input p {
   font-size: 12px;
