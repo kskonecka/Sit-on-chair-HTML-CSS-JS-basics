@@ -5,6 +5,7 @@
   <title></title>
   <link rel="stylesheet" href="css/reset.css"><!--ten reset jako pierwszy to htmla -->
   <link rel="stylesheet" href="css/style.css">
+  <script src="app.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -12,7 +13,13 @@
     <div class="main_width">
       <div class="title"><p>SIT <span>ON</span> CHAIR</p></div>
       <ul class="menu">
-        <li>o firmie</li>
+        <li>o firmie
+          <ul><div class="arrow-up"></div>
+            <li>Aktualności</li>
+            <li>Nasz Team</li>
+            <li>Historia</li>
+          </ul>
+        </li>
         <li>galeria</li>
         <li>kontakt</li>
       </ul>
@@ -21,7 +28,13 @@
 
   <div class="gradient_background">
     <section class="main display">
-      <div class="div_blackchair"><img src="imagesOk/black_chair.png" class="blackchair_img"> </div>
+      <div class="div_blackchair">
+        <ul>
+          <li><img src="imagesOk/black_chair.png" class="blackchair_img slider"></li>
+          <li><img src="imagesOk/orange.png" class="orangechair slider"></li>
+          <li><img src="imagesOk/red.png" class="redchair slider"></li>
+        </ul>
+      </div>
       <div class="sitonourchair">
         <h1>SIT <span>ON</span> OUR <span>CHAIR</span></h1>
         <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
@@ -37,10 +50,14 @@
 
   <section class="middle display">
     <div class="chair clair">
-      <p class="greybackground">  Chair CLAIR<hr></p>
+      <div class="mouseOverOut">
+        <p class="greybackground">Chair CLAIR</p><hr>
+      </div>
     </div>
     <div class="chair margarita">
-      <p class="greybackground">  Chair MARGARITA<hr></p>
+      <div class="mouseOverOut">
+        <p class="greybackground">Chair MARGARITA</p><hr>
+      </div>
     </div>
     <div class="middle_input">
       <h3>Finds all inputs</h3><hr>
@@ -92,19 +109,89 @@
     </div>
   </section>
 
+  <section class="application ">
+    <div class="main_width">
+        <section class="choice_part inline">
+            <header class="contact_form_header">
+                <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                <span class="green_bell"></span>
+            </header>
+            <form class="purchase_form">
+            <div class="form">
+                <select class="drop_down_list">
+                        <option value="" disabled selected hidden>Wybierz rodzaj
+                          <span class="list_arrow"></span></option>
+                        <option value="Clair">Clair</option>
+                        <option value="Margarita">Margarita</option>
+                        <option value="Selena">Selena</option>
+                </select>
+
+                <select class="drop_down_list">
+                        <option value="" diasbled selected hidden>Wybierz Kolor
+                          <span class="list_arrow"></span></option>
+                        <option value="czerwony">Czerwony</option>
+                        <option value="czarny">Czarny</option>
+                        <option value="zielony">Zielony</option>
+                </select>
+
+                <select class="drop_down_list">
+                        <option value="" diasbled selected hidden>Wybierz Materiał<span class="list_arrow"></span></option>
+                        <option value="tkanina">Tkanina</option>
+                        <option value="skora">Skóra</option>
+                </select>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-transport-price="200">
+                    <label for="transport">Transport</label>
+                </div>
+                <div class="checkbox"></div>
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="imagesOK/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <header class="align_right contact_form_header">
+                <h3>PODSUMOWANIE</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="chosen_chair">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="chosen_chair value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+          </form>
+        </section>
+    </div>
+</section>
+
   <section class="contact display">
     <p>KONTAKT<hr></p>
-    <div class="form">
-      <form>
-        <div class="form_left">
+    <div class="contact_form_div">
+      <form class="contact_form">
+        <div class="contact_form_left">
           <input type="text" name="userName" placeholder="Imie"><br>
           <input type="email" name="email" placeholder="email"><br>
                     <!-- <input type="text" name="message" placeholder="Wiadomosc" class="input_long"> -->
           <textarea name="message" placeholder="Wiadomosc" wrap="physical"></textarea>
         </div>
-        <div class="form_right">
+        <div class="contact_form_right">
           <img src="imagesOk/form_ok.jpg" class="tick"><p class="agree">Zgadzam sie na przetwarzanie<br>danych osobowych</p>
-          <input type="submit" value="WYSLIJ" class="send">
+          <input type="submit" value="WYSLIJ" class="contact_form_send">
         </div>
       </form>
     </div>
