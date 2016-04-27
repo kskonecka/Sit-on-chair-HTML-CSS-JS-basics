@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <link rel="stylesheet" href="css/reset.css"><!--ten reset jako pierwszy to htmla -->
+  <link rel="stylesheet" href="css/reset.css"><!--RESET-->
   <link rel="stylesheet" href="css/style.css">
   <script src="app.js" type="text/javascript"></script>
 
@@ -13,15 +13,15 @@
     <div class="main_width">
       <div class="title"><p>SIT <span>ON</span> CHAIR</p></div>
       <ul class="menu">
-        <li>o firmie
-          <ul><div class="arrow-up"></div>
-            <li>Aktualności</li>
-            <li>Nasz Team</li>
-            <li>Historia</li>
+        <li>about
+          <ul class="invisible"><div class="arrow-up"></div>
+            <li>News</li>
+            <li>Our Team</li>
+            <li>History</li>
           </ul>
         </li>
-        <li>galeria</li>
-        <li>kontakt</li>
+        <li>gallery</li>
+        <li>contact</li>
       </ul>
     </div>
   </header>
@@ -41,7 +41,7 @@
           pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
           malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
         </p>
-        <a href="www.blabla.pl" class="seemore">ZOBACZ WIECEJ</a>
+        <a href="#" class="seemore">SEE MORE</a>
       </div>
       <div class="arrowleft">&#60;</div>
       <div class="arrowright">&#62;</div>
@@ -69,57 +69,73 @@
 
   <section class="price_background">
     <div class="price display">
-          <p>CENNIK<hr></p>
-          <div class="price1"><!--pierwszy proskatak-->
+          <p>PRICE LIST<hr></p>
+
+          <!--first price box-->
+          <div class="price1">
             <div class="circle_medium"></div>
             <div class="circle_small"></div>
             <p class="basic">BASIC PLAN</p>
-            <div class="circle_big"><p>85<sup>99</sup><br>PLN/MSC</div>
+            <div class="circle_big">
+              <p>&euro;21<sup>95</sup><br>per MONTH
+              </p>
+            </div>
             <ul class="service_list">
-                <li>Zakup towaru + dowoz</li>
-                <li>Serwis</li>
+                <li>Transport</li>
+                <li>Service</li>
             </ul>
-            <a href="www.nothing.com" class="join_button">DOLACZ</a>
+            <a href="#" class="join_button">JOIN</a>
           </div>
-          <div class="price2"><!--drugi proskakat-->
+
+          <!--second price box-->
+          <div class="price2">
             <div class="circle_medium"></div>
             <div class="circle_small"></div>
             <p class="standard">STANDARD PLAN</p>
-            <div class="circle_big"><p>95<sup>99</sup><br>PLN/MSC</div>
+            <div class="circle_big">
+              <p>&euro;24<sup>95</sup><br>per MONTH
+              </p>
+            </div>
             <ul class="service_list">
-              <li>Zakup towaru + dowoz</li>
-              <li>Serwis</li>
-              <li>Gwarancja 5 lat</li>
+              <li>Transport</li>
+              <li>Service</li>
+              <li>5-year guarantee</li>
             </ul>
-            <a href="www.nothing.com" class="join_button">DOLACZ</a>
+            <a href="#" class="join_button">JOIN</a>
           </div>
-          <div class="price3"><!--trzeci-->
+
+          <!--third price box-->
+          <div class="price3">
             <div class="circle_medium"></div>
             <div class="circle_small"></div>
-            <p class="advance">ADVANCE PLAN</p>
-            <div class="circle_big"><p>211<sup>00</sup><br>PLN/MSC</div>
+            <p class="advance">ADVANCED PLAN</p>
+            <div class="circle_big">
+              <p>&euro;49<sup>95</sup><br>per MONTH
+              </p>
+              </div>
             <ul class="service_list">
-              <li>Zakup towaru + dowoz</li>
-              <li>Serwis</li>
-              <li>Gwarancja 6 lat</li>
-              <li>Porady projektanta</li>
+              <li>Transport</li>
+              <li>Service</li>
+              <li>6-year guarantee</li>
+              <li>Designer's advice</li>
             </ul>
-            <a href="www.nothing.com" class="join_button">DOLACZ</a>
+            <a href="#" class="join_button">JOIN</a>
           </div>
     </div>
   </section>
 
+<!--order form-->
   <section class="application ">
     <div class="main_width">
         <section class="choice_part inline">
             <header class="contact_form_header">
-                <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                <h3>CREATE YOUR OWN CHAIR</h3>
                 <span class="green_bell"></span>
             </header>
             <form class="purchase_form">
             <div class="form">
                 <select class="drop_down_list">
-                        <option value="" disabled selected hidden>Wybierz rodzaj
+                        <option value="" disabled selected hidden>Choose type
                           <span class="list_arrow"></span></option>
                         <option value="Clair">Clair</option>
                         <option value="Margarita">Margarita</option>
@@ -127,17 +143,17 @@
                 </select>
 
                 <select class="drop_down_list">
-                        <option value="" diasbled selected hidden>Wybierz Kolor
+                        <option value="" diasbled selected hidden>Choose colour
                           <span class="list_arrow"></span></option>
-                        <option value="czerwony">Czerwony</option>
-                        <option value="czarny">Czarny</option>
-                        <option value="zielony">Zielony</option>
+                        <option value="red">red</option>
+                        <option value="black">black</option>
+                        <option value="orange">orange</option>
                 </select>
 
                 <select class="drop_down_list">
-                        <option value="" diasbled selected hidden>Wybierz Materiał<span class="list_arrow"></span></option>
-                        <option value="tkanina">Tkanina</option>
-                        <option value="skora">Skóra</option>
+                        <option value="" diasbled selected hidden>Choose fabric<span class="list_arrow"></span></option>
+                        <option value="viscose">viscose</option>
+                        <option value="leather">leather</option>
                 </select>
                 <div class="checkbox check-box">
                     <input type="checkbox" id="transport" data-transport-price="200">
@@ -153,13 +169,13 @@
 
         <section class="summary_part inline">
             <header class="align_right contact_form_header">
-                <h3>PODSUMOWANIE</h3>
+                <h3>YOUR ORDER</h3>
                 <span class="green_bell"></span>
             </header>
 
             <div class="summary_panel">
                 <div class="panel_left">
-                    <h4 class="chosen_chair">Twój fotel</h4>
+                    <h4 class="chosen_chair">Your chair</h4>
                     <span class="color"></span>
                     <span class="pattern"></span>
                     <span class="transport"></span>
@@ -170,41 +186,44 @@
                     <span class="pattern value"></span>
                     <span class="transport value"></span>
                 </div>
-                <div class="sum_label">SUMA</div>
+                <div class="sum_label">TOTAL</div>
                 <div class="sum"><strong></strong></div>
             </div>
-            <a href="" class="green_button">Zamawiam</a>
+            <a href="" class="green_button">BUY</a>
           </form>
         </section>
     </div>
 </section>
 
+
+<!--contact-->
   <section class="contact display">
-    <p>KONTAKT<hr></p>
+    <p>CONTACT<hr></p>
     <div class="contact_form_div">
       <form class="contact_form">
         <div class="contact_form_left">
-          <input type="text" name="userName" placeholder="Imie"><br>
-          <input type="email" name="email" placeholder="email"><br>
-                    <!-- <input type="text" name="message" placeholder="Wiadomosc" class="input_long"> -->
-          <textarea name="message" placeholder="Wiadomosc" wrap="physical"></textarea>
+          <input type="text" name="userName" placeholder="your name"><br>
+          <input type="email" name="email" placeholder="your e-mail"><br>
+          <textarea name="message" placeholder="your message" wrap="physical"></textarea>
         </div>
         <div class="contact_form_right">
-          <img src="imagesOk/form_ok.jpg" class="tick"><p class="agree">Zgadzam sie na przetwarzanie<br>danych osobowych</p>
-          <input type="submit" value="WYSLIJ" class="contact_form_send">
+          <img src="imagesOk/form_ok.jpg" class="tick"><p class="agree">I accept<br>Terms & Conditions</p>
+          <input type="submit" value="SEND" class="contact_form_send">
         </div>
       </form>
     </div>
   </section>
 
+
+<!--footer-->
   <footer>
-    <div class="footer_copyright"><p>Copyright 2014 | All Rights Reserved. - Sit <b>On</b> Chair</p></div> <!--pogrubic text-->
+    <div class="footer_copyright"><p>Copyright 2016 | All Rights Reserved. - Sit <b>On</b> Chair</p></div>
     <div class="footer_links">
-      <a href="www.sth.com"><img src="imagesOk/flickr.png"/></a>
-      <a href="www.sth.com"><img src="imagesOk/vimeo.png"/></a>
-      <a href="www.sth.com"><img src="imagesOk/pinterest.png"/></a>
-      <a href="www.sth.com"><img src="imagesOk/twitter.png"/></a>
-      <p class="footer_logo">SIT ON CHAIR</p>
+      <a href="#"><img src="imagesOk/flickr.png"/></a>
+      <a href="#"><img src="imagesOk/vimeo.png"/></a>
+      <a href="#"><img src="imagesOk/pinterest.png"/></a>
+      <a href="#"><img src="imagesOk/twitter.png"/></a>
+      <p class="footer_logo">SIT <span>ON</span> CHAIR</p>
     </div>
   </footer>
 </body>

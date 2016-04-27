@@ -10,6 +10,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/ralewaybold/raleway-bold-webfont.eot');
+    src: url('../fonts/ralewaybold/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ralewaybold/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ralewaybold/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/ralewaybold/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ralewaybold/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   font-family: 'raleway', sans-serif;
 }
@@ -19,7 +32,7 @@ header {
   height: 40px;
   background-color: black;
   color: white;
-  /*plus jeszcze czcionke */
+  font-family: 'ralewaybold', sans-serif;
 }
 .main_width {
   width: 700px;
@@ -29,7 +42,6 @@ header {
 }
 .title {
   float: left;
-  /*margin-top: 10px;*/
 }
 .menu {
   float: right;
@@ -38,7 +50,6 @@ header {
 .menu>li {
   display: inline-block;
   text-transform: uppercase;
-  font-style: oblique; /*nie dziala*/
   margin-left: 50px;
   position: relative;
 }
@@ -53,7 +64,7 @@ header {
   left: 70px;
 }
 .menu li ul {
-  display: none;
+  font-family: "raleway", sans-serif;
   position: absolute;
   background-color: black;
   top: 40px;
@@ -69,14 +80,15 @@ header {
   margin-left: 20px;
 }
 span {
-  font-style: oblique; /*nie dziala*/
   color: #23ba9c;
 }
-/*teraz sekcja z krzeslem*/
+
+
+/*SECTION W/ GRADIENT BACKGROUND*/
 .gradient_background {
   width: 100%;
   height: 400px;
-  background: #f7f7f7; /* Old browsers */
+  background: #f7f7f7;
   background: -moz-linear-gradient(top, #f7f7f7 53%, #ced1d6 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #f7f7f7 53%,#ced1d6 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #f7f7f7 53%,#ced1d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -87,14 +99,12 @@ span {
   height: 400px;
   margin: 0 auto;
   position: relative;
-  display: flex; /*dopiero w tej pozycji ta sekcja jest bezposrednio pod*/
-  /*border: 1px solid red; jak usuwam to sie wszystko przesuwa!*/
+  display: flex;
 }
 .div_blackchair {
   width: 470px;
   height: 340px;
   /*border: 1px solid silver;*/
-  /*float: left;*/
   margin-top: 20px;
   margin-left: -40px;
   position: absolute;
@@ -117,7 +127,6 @@ span {
   left: -10px;
 }
 .sitonourchair {
-  /*float: right;*/
   width: 300px;
   height: 340px;
   /*border: 1px solid silver;*/
@@ -130,6 +139,7 @@ span {
 h1 {
   margin-top: 52px;
   font-size: 30px;
+  font-family: 'ralewaybold', sans-serif;
 }
 p {
   padding: 10px 0;
@@ -156,13 +166,15 @@ p {
 .arrowright {
   font-size: 82px;
   color: #23ba9c;
-  margin-top: -89px; /*dlaczego tak*/
+  margin-top: -89px;
   position: absolute;
   right: 0;
   top: 205px;
   cursor: pointer;
 }
-/*teraz sekcja ze zdjeciami krzesel*/
+
+
+/*SECTION W/ SMALL PICS*/
 .middle {
   width: 700px;
   height: 215px;
@@ -202,8 +214,10 @@ p {
   background-color: rgba(215, 209, 205, 0.5);
   margin-top: 100px;
   text-indent: 4px;
+  font-family: 'ralewaybold', sans-serif;
+  color: #575757;
 }
-.clair p { /*czcionki bold sciagnac*/
+.clair p {
   line-height: 40px;
 }
 .margarita p {
@@ -227,11 +241,21 @@ p {
   background-color: #21b89c;
   margin-top: 5px;
 }
-/*teraz cennik*/
+.middle_input h3 {
+  font-family: 'ralewaybold', sans-serif;
+  color: #575757;
+}
+
+
+/*PRICE LIST*/
 .price_background {
   background-color: #f0f0f0;
   width: 100%;
   height: 480px;
+}
+.price>p {
+  font-family: 'ralewaybold', sans-serif;
+  color: #575757;
 }
 .price hr {
   display: block;
@@ -247,7 +271,7 @@ p {
   margin: 0 auto;
   /*border: 1px solid red;*/
 }
-.price1 { /*pierwszy prostokat z cena*/
+.price1 { /*1ST PRICE BOX*/
   width: 220px;
   height: 370px;
   border: 2px solid #d4d4d4;
@@ -259,7 +283,7 @@ p {
 .circle_medium {
   width: 55px;
   height: 55px;
-  border: 1px solid pink; /*usunac*/
+  border: 1px solid pink;
   position: absolute;
   top: -35px;
   left: 80px;
@@ -280,7 +304,7 @@ p {
   left: 95px;
   border-radius: 50%;
 }
-.circle_big { /*ogolne duze circle*/
+.circle_big { /*BIG CIRCLE*/
   width: 100px;
   height: 100px;
   border: 2px solid #d4d4d4;
@@ -291,8 +315,9 @@ p {
   color: #d4d4d4;
   text-align: center;
   padding-top: 15px;
+  font-family: 'ralewaybold', sans-serif;
 }
-.price1 .circle_big, .price3 .circle_big { /*duze circle w pierwszym i trzecim prostokacie*/
+.price1 .circle_big, .price3 .circle_big { /*BIG CIRCLES IN 1ST AND 3RD BOX*/
   background-color: white;
 }
 .basic {
@@ -317,7 +342,7 @@ p {
   background-color: #f0f0f0;
   color: #969696;
 }
-.join_button { /*link dolacz*/
+.join_button {
   height: 28px;
   width: 100px;
   bottom: 10px;
@@ -334,7 +359,7 @@ p {
 .price1 .join_button, .price3 .join_button {
   color: #f0f0f0;
 }
-.price2 { /*drugi prostokat*/
+.price2 { /*2ND BOX*/
   width: 220px;
   height: 370px;
   border: 2px solid #26c7a9;
@@ -344,20 +369,20 @@ p {
   vertical-align: middle;
   margin-left: 15px;
 }
-.price2 .circle_medium { /*srednie kolko z drugiego prostokata*/
+.price2 .circle_medium { /*MIDDLE CIRCLE FROM THE 2ND BOX*/
   background-color: #26c7a9;
   border: 2px solid #26c7a9;
 }
-.price2 .circle_small { /*male kolo z drgiego prostokate*/
+.price2 .circle_small { /*SMALL CIRCLE FROM THE 2ND BOX*/
   background-color: #f7f7f7;
 }
-.standard { /*napis standard plan*/
+.standard { /*STANDARD PLAN STRING*/
   position: absolute;
   top: 20px;
   left: 45px;
   color: #f7f7f7;
 }
-.price2 .circle_big { /*duze kolko z drugiego*/
+.price2 .circle_big { /*BIG CIRCLE FROM THE SECOND BOX*/
   background-color: #f7f7f7;
   color: #26c7a9;
   border: 2px solid #26c7a9;
@@ -374,7 +399,7 @@ p {
   background-color: #ffffff;
   color: #26c7a9;
 }
-.price3 { /*trzeci prostokat*/
+.price3 { /*3RD BOX*/
   width: 220px;
   height: 370px;
   border: 2px solid #d4d4d4;
@@ -600,11 +625,13 @@ p {
 .chosen_chair {
   height: 30px;
 }
-/* teraz sekcja z formularzem kontaktowym*/
+/* CONTACT FORM*/
 .contact {
   width: 700px;
   height: 450px;
   margin: 0 auto;
+  font-family: 'ralewaybold', sans-serif;
+  color: #575757;
   /*border: 1px solid red;*/
 }
 .contact hr {
@@ -615,7 +642,7 @@ p {
   margin-top: -8px;
   margin-bottom: 0;
 }
-.contact_form_div { /*div w ktorym jest formularz*/
+.contact_form_div { /*div containing the contact form*/
   width: 100%;
   height: 350px;
   /*border: 1px solid pink;*/
@@ -623,7 +650,7 @@ p {
   background-repeat: no-repeat;
   background-position: top right;
 }
-.contact_form { /*formularz*/
+.contact_form { /*form*/
   width: 100%;
   line-height: 40px;
 }
@@ -639,7 +666,6 @@ p {
   height: 40px;
   font-size: 24px;
   text-indent: 10px;
- /*jak zrobic kolor, ale bez efektu 3d*/
 }
 input:not(.contact_form_send), textarea {
   opacity: 0.5;
@@ -670,11 +696,14 @@ textarea {
 .contact_form_send {
   background-color: #23ba9c;
   color: white;
+  border: none;
   border-radius: 5px;
   padding-top: 8px;
   padding-bottom: 34px;
 }
-/*footer teraz*/
+
+
+/*footer*/
 footer {
   width: 700px;
   height: 50px;
@@ -700,4 +729,13 @@ footer {
   float: right;
   font-size: 15px;
   color: silver;
+}
+.footer_logo span {
+  font-family: 'ralewaybold', sans-serif;
+  color: #575757;
+}
+
+/*JS classes*/
+.invisible {
+  display: none;
 }
