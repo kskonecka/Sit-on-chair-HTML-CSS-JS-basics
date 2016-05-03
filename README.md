@@ -5,7 +5,7 @@ It works on Chrome and Mozilla browsers and it's supposed to be viewed on big sc
 
 The design is based on "warsztat1.jpg" which can be seen among the files above.
 
-A few elements on the site have javascript functionalities:
+A few elements on the site have javascript functionalities (Vanilla JS):
 
 1. when toggle-clicking the "about" menu, a sub-menu appears/dissapears;
 2. in the main section, there is a basic gallery slider after clicking the "<" ">" icons;
